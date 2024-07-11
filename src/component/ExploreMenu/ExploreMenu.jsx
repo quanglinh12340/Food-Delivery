@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React from "react";
+import { PropTypes } from "prop-types";
 import "./ExploreMenu.css";
 import { menu_list } from "@/assets";
 
@@ -37,5 +38,8 @@ const ExploreMenu = ({ category, setCategory }) => {
     </div>
   );
 };
-
+ExploreMenu.propTypes = {
+  category: PropTypes.string,
+  setCategory: PropTypes.func,
+};
 export default ExploreMenu;
